@@ -51,3 +51,16 @@ Customize the app's resources:
 - **Icons**: Replace the launcher icons in `res/mipmap-*`.
 - **Typography**: Update the font styles in `ui/theme/Typographies.kt` using your preferred fonts.
 
+### 8. Remove Existing Git History and Initialize a New Repository
+
+To start fresh with a new Git history:
+
+1. Remove the existing Git history:
+```bash
+rm -rf .git
+git init
+git remote add newrepo.git
+git add .
+git commit -m "Initial commit"
+```
+
