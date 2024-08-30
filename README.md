@@ -26,7 +26,7 @@ To rename the package structure across the entire project:
 
 Rename the project to match your new app:
 
-1. Open the `settings.gradle` file.
+1. Open the `settings.gradle` and `build.gradle` files.
 2. Change the `rootProject.name` to your desired project name.
 
 ### 5. Update Dependencies
