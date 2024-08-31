@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Scaffold
@@ -43,14 +44,14 @@ fun MenuScreen(navController: NavHostController) {
             // Define the buttons with labels, routes, and icons
             val buttons = listOf(
                 Triple(
-                    "EditHere",
-                    Screen.ScreenOne.route,
-                    Icons.Filled.Search
+                    "Screen Three",
+                    Screen.ScreenThree.route,
+                    Icons.Filled.Search // Change icon as needed
                 ),
                 Triple(
-                    "EditHere",
-                    Screen.ScreenTwo.route,
-                    Icons.Filled.List
+                    "Screen Four",
+                    Screen.ScreenFour.route,
+                    Icons.AutoMirrored.Filled.List // Change icon as needed
                 )
                 // Add more buttons here with appropriate labels, routes, and icons
             )

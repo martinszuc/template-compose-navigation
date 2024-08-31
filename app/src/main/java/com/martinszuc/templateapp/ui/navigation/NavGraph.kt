@@ -19,13 +19,17 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.martinszuc.templateapp.ui.component.menu.MenuScreen
+import com.martinszuc.templateapp.ui.component.screenFour.ScreenFour
 import com.martinszuc.templateapp.ui.component.screenOne.ScreenOne
+import com.martinszuc.templateapp.ui.component.screenThree.ScreenThree
 import com.martinszuc.templateapp.ui.component.screenTwo.ScreenTwo
 import com.martinszuc.templateapp.ui.component.settings.SettingsScreen
 
 sealed class Screen(val route: String) {
     object ScreenOne : Screen("screen_one")
     object ScreenTwo : Screen("screen_two")
+    object ScreenThree : Screen("screen_three")
+    object ScreenFour : Screen("screen_four")
     object Menu : Screen("menu")
     object Settings : Screen("settings")
 }
@@ -47,6 +51,12 @@ fun NavGraph(
         }
         composable(Screen.ScreenTwo.route) {
             ScreenTwo()
+        }
+        composable(Screen.ScreenThree.route) {  // Add ScreenThree route
+            ScreenThree()
+        }
+        composable(Screen.ScreenFour.route) {   // Add ScreenFour route
+            ScreenFour()
         }
         composable(Screen.Menu.route) {
             MenuScreen(navController)
